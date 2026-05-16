@@ -2,8 +2,8 @@ name: Upload Website
 
 on:
   push:
-    branches:
-    - release
+    tags:
+      - '*' # Triggers for any tag push
 
 jobs:
   deploy:
